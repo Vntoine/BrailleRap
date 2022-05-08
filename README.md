@@ -2,9 +2,9 @@
 
 # !!!!!!!!!!! This is for BrailleRapSP !!!!!!!!!
 
-Emboss Braille with a BrailleRapSP! This is a modified version of original ArthurSW work https://github.com/arthursw/BrailleRap to handle the Braille printer BrailleRapSP. The main modification is that ArturSW version use a motor for the Z axis, BrailleRAP-SP use an electro-magnet and don't have a Z axis. So the G-CODE is slightly different, and not portable !
+Emboss Braille with a BrailleRapSP! This is a modified version of original [ArthurSW](https://github.com/arthursw) work https://github.com/arthursw/BrailleRap to handle the Braille printer BrailleRapSP. The main modification is that ArturSW version use a motor for the Z axis, BrailleRAP-SP use an electro-magnet and don't have a Z axis. So the G-CODE is slightly different, and not portable !
 
-Thanks to Avinash Pudale the application now support
+Thanks to [Avinash Pudale](https://github.com/AvinashPudale) the application now support
 indian devnagari languages  (hindi,marathi,nepali) 
 Emboss Braille with BrailleRapSP!
 
