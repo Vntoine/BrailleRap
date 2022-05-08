@@ -12,7 +12,7 @@ Emboss Braille with BrailleRapSP!
 
 BrailleRAPSP repo is here https://github.com/BrailleRapSP/BrailleRapSP
 
-BrailleRap-SP also have a web site http://www.braillerap.com
+
 
 ### Contribution
 
