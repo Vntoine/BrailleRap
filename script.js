@@ -13,15 +13,15 @@ $(document).ready( function() {
 	let braille = {
 		marginWidth: 3,
 		marginHeight: 5,
-		paperWidth: 175,
-		paperHeight: 290,
+		paperWidth: 200,
+		paperHeight: 250,
 		letterWidth: 2.3,
 		dotRadius: 1.25,
 		letterPadding: 3.75,
-		linePadding: 3,
+		linePadding: 6,
 		headDownPosition: -2.0,
 		headUpPosition: 10,
-		speed: 4000,
+		speed: 8000,
 		delta: false,
 		goToZero: false,
 		invertX: true,
@@ -34,8 +34,8 @@ $(document).ready( function() {
 		svgPosY: 0,
 		// svgScale: 1,
 		language: "6 dots",
-		GCODEup: 'M3 S0',
-		GCODEdown: 'M3 S1',
+		GCODEup: 'M4',
+		GCODEdown: 'M3 S255',
 		usedotgrid: false,
 
 	};
@@ -79,6 +79,8 @@ $(document).ready( function() {
 	{
 		str = 'G28 X;\r\n';
 		str += 'G28 Y;\r\n';
+		str += 'M92 X80;\r\n';
+		str += 'M92 Y44;\r\n';
 
 		return str;
 	}
@@ -413,7 +415,7 @@ $(document).ready( function() {
 			let char = textCopy[i]
 
 			// check special cases:
-			let charIsCapitalLetter = is8dot ? false : /[A-Z]/.test(char)
+			let charIsCapitalLetter = is8dot ? false : /[A-ZÀÂÇÈÉÊËÎÏÔÙÛÜ]/.test(char)
 			let charIsLineBreak = /\r?\n|\r/.test(char)
 
 			// If char is line break: reset currentX and increase currentY
